@@ -2,6 +2,25 @@
 
 A robust Java-based web application for user profile management, migrated to **AWS Cloud** using a **lift-and-shift** strategy for improved scalability, security, and automation.
 
+## Architectural Design on AWS 📐
+
+![Screenshot 2025-02-02 171012](https://github.com/user-attachments/assets/dc34ff51-6f7b-47b2-b887-521a461d1faf)
+
+## Flow of Execution➡️
+1. Login to AWS Account
+2. Create Key Pairs
+3. Create Security Groups
+4. Launch Instances with User Data [BASH SCRIPTS]
+5. Update IP to Name Mapping in Route 53
+6. Build Application from Source Code
+7. Upload to S3 Bucket
+8. Download Artifact to Tomcat EC2 Instance
+9. Setup ELB with HTTPS [Cert from Amazon Certificate Manager]
+10. Map ELB Endpoint to Website Name in GoDaddy DNS
+11. Verify
+12. Build Auto Scaling Group for Tomcat Instances
+
+
 ## Technologies Used 🛠️
 
 ### Backend
@@ -123,9 +142,7 @@ A robust Java-based web application for user profile management, migrated to **A
 
 ## License 📜
 
-[Specify License Information]
+MIT Licensed
 
-## Support 📞
 
-[Provide Support Contact Information]
 
